@@ -1,0 +1,325 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #F4F4F4;
+  height: 100px;
+}
+
+hr {
+  margin-top: 5px!important;
+  margin-bottom: 5px!important;
+  border-top: 1px solid #eee!important;
+}
+nav.sidebar.navbar {
+  border-radius: 0px;
+  background-color: #fff;
+}
+nav .panel{
+  margin-bottom: 0;
+}
+
+nav.sidebar, .main{
+  -webkit-transition: margin 200ms ease-out;
+  -moz-transition: margin 200ms ease-out;
+  -o-transition: margin 200ms ease-out;
+  transition: margin 200ms ease-out;
+}
+ul.nav-menu-list-style{
+  margin:0;
+}
+ul.nav-menu-list-style .nav-header{
+  border-top:1px solid #FFFFFF;
+  border-bottom:1px solid #e8e8e8;
+  display:block;
+  margin:0;
+  line-height:42px;
+  padding:0 8px;
+  font-weight:600;
+}
+ul.nav-menu-list-style> li{
+  position:relative; }
+ul.nav-menu-list-style> li a{
+  border-top:1px solid #FFFFFF;
+  border-bottom:1px solid #e8e8e8;
+  padding:0 10px;
+  line-height:32px;
+}
+
+ul.nav-menu-list-style{list-style:none; padding:0px; margin:0px;}
+ul.nav-menu-list-style li .badge,ul.nav-menu-list-style li .pull-right,ul.nav-menu-list-style li span.badge,ul.nav-menu-list-style li label.badge{float:right; margin-top:7px;}
+ul.bullets{list-style:inside disc}
+ul.numerics{list-style:inside decimal}
+ul.kas-icon-aero li a:before{font-family: 'Glyphicons Halflings'; font-size:9px; content: "\e258"; padding-right:8px; }
+
+#header{
+  background-color: #174582;
+  height: 80px;
+}
+#header img{
+  padding: 20px ;
+}
+
+.no-padding{
+  padding:0px;
+}
+
+.glyphicon-icon-rpad .glyphicon,.glyphicon-icon-rpad .glyphicon.m8,.fa-icon-rpad .fa,.fa-icon-rpad .fa.m8{ padding-right:8px; }
+.glyphicon-icon-lpad .glyphicon,.glyphicon-icon-lpad .glyphicon.m8,.fa-icon-lpad .fa,.fa-icon-lpad .fa.m8{ padding-left:8px; }
+.glyphicon-icon-rpad .glyphicon.m5,.fa-icon-rpad .fa.m5{ padding-right:5px; }
+.glyphicon-icon-lpad .glyphicon.m5,.fa-icon-lpad .fa.m5{ padding-left:5px; }
+.glyphicon-icon-rpad .glyphicon.m12,.fa-icon-rpad .fa.m12{ padding-right:12px; }
+.glyphicon-icon-lpad .glyphicon.m12,.fa-icon-lpad .fa.m12{ padding-left:12px; }
+.glyphicon-icon-rpad .glyphicon.m15,.fa-icon-rpad .fa.m15{ padding-right:15px; }
+.glyphicon-icon-lpad .glyphicon.m15,.fa-icon-lpad .fa.m15{ padding-left:15px; }
+ul.nav-menu-list-style .nav-header .menu-collapsible-icon{position:absolute; right:3px; top:16px; font-size:9px; }
+
+.custompad{
+  padding-left: 8px!important;
+  padding-right: 8px!important;
+}
+.custom-backcolor{
+  background-color: white!important;
+}
+.custom-color{
+color:#4d4f51!important;
+}
+.btn-custom{
+  background-color: #012979!important;
+  color:white;
+  font-weight: bold;
+}
+.btn-custom:hover{
+  color:white!important;
+}
+.custom-margin{
+  margin-top: 10px;
+}
+.vuelta{
+  padding-left: 8px;
+  transform: rotate(180deg);
+}
+.well {
+margin-bottom: 0px!important;
+
+}
+.main .row{
+  padding: 0px;
+  margin: 0px;
+}
+
+.main{
+  padding: 10px 10px 0 10px;
+}
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+
+  /*Allow main to be next to Nav*/
+  .main{
+    position: absolute;
+    width: calc(100% - 40px); /*keeps 100% minus nav size*/
+    margin-left: 40px;
+    float: right;
+  }
+  nav.sidebar:hover + .main{
+    margin-left: 200px;
+  }
+  nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+  nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+    text-align: left;
+    width: 100%;
+    margin-left: 0px;
+  }
+  /*Center Icons*/
+  nav.sidebar a{
+    padding-right: 13px;
+  }
+
+  /*adds border top to first nav box */
+  nav.sidebar .navbar-nav > li:first-child{
+    border-top: 1px #e5e5e5 solid;
+  }
+
+  /*adds border to bottom nav boxes*/
+  nav.sidebar .navbar-nav > li{
+    border-bottom: 1px #e5e5e5 solid;
+  }
+
+  /* Colors/style dropdown box*/
+  nav.sidebar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /*allows nav box to use 100% width*/
+  nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+    padding: 0 0px 0 0px;
+  }
+
+  /*colors dropdown box text */
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+  }
+  /*gives sidebar width/height*/
+  nav.sidebar{
+    width: 200px;
+    height: 100%;
+    margin-left: -160px;
+    float: left;
+    z-index: 8000;
+    margin-bottom: 0px;
+  }
+
+  /*give sidebar 100% width;*/
+  nav.sidebar li {
+    width: 100%;
+  }
+
+  /* Move nav to full on mouse over*/
+  nav.sidebar:hover{
+    margin-left: 0px;
+  }
+  /*for hiden things when navbar hidden*/
+  .forAnimate{
+    opacity: 0;
+  }
+
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+
+  /*Allow main to be next to Nav*/
+  .main{
+    width: calc(100% - 200px); /*keeps 100% minus nav size*/
+    margin-left: 200px;
+  }
+  /*Show all nav*/
+  nav.sidebar{
+    margin-left: 0px;
+    float: left;
+    width: 100% !important;
+  }
+  /*Show hidden items on nav*/
+  nav.sidebar .forAnimate{
+    opacity: 1;
+  }
+}
+@media (max-width: 360px) {
+  .no-padding{
+    padding:10px;
+    background-color: white;
+  }
+}
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+  color: #CCC;
+  background-color: white;
+}
+
+nav:hover .forAnimate{
+  opacity: 1;
+}
+#presentacionHotel{
+  padding: 10px;
+}
+.peso{
+  font-size: 18px;
+  font-weight: normal;
+}
+.precio{
+  color: #D17522!important;
+  font-weight: bold!important;
+  margin-top: 0px;
+
+}
+.lineav{
+  border-right: 1px dashed #000;
+  margin: 2px;
+  height: 100%;
+  min-height: 160px;
+}
+.lineah{
+  margin-top: 10px!important;
+  border-bottom: 1px dashed #000;
+  margin: 2px;
+}
+
+#presentacionHotel div{
+  padding-left: 5px;
+}
+#imgamenities{
+  padding-top: 5px;
+}
+#imgamenities img{
+  float: left;
+  padding:5px;
+  width: 30px;
+  height:30px;
+}
+.seccion{
+  background-color: white;
+  margin: 5px;
+  padding: 3px;
+}
+.clear{
+  clear: both;
+}
+.form-check{
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+}
+label.form-check-label{
+  margin-bottom: 0px!important;
+}
+.goldenstar{
+  fill: #FDBA12 !important;
+  width: 20px;
+  height:20px;
+  float: left;
+}
+.leftgoldenstar{
+  fill: #FDBA12 !important;
+  width: 20px;
+  height:20px;
+}
+.bluestar{
+  fill: #337ab7!important;
+  width: 18px;
+  height:18px;
+
+}
+.nombrehotel h3{
+  margin: 0;
+  color: #157AB1;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.opcionesfiltro{
+  line-height: 3em;
+}
+.opcionesfiltro svg{
+  float: left;
+  margin-top: 4%;
+}
+.titulo{
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 4%;
+}
+.panel-default{
+  border-color: transparent;
+  border-radius: 0;
+}
+
