@@ -2,11 +2,11 @@
 
 Este repositorio tiene como fin compartir el desarrollo solicitado.
 
-## Getting Started
+## Como empezar
 
 Inicialmente se debe clonar el repositorio de git https://github.com/medm89/almundo-test.git a traves de la instruccion git clone, en el encontra 2 carpetas almundo y api-rest la primera contiene el desarrollo de la pagina la cual muestra los hoteles y realiza los filtrados, la segunda carpeta api-rest contiene el servicio rest el cual consume el archivo data.json y realiza los filtrados para las diferentes peticiones que soporta.
 
-### Prerequisites
+### Prerequisitos
 
 Que debes tener instalado: 
 NodeJs el cual funciona como servidor de aplicaciones y en la cual realizamos la Api y funciona como servidor Web 
@@ -24,7 +24,7 @@ Angular @CLI
 *Nodemon
 ```
 
-### Installing
+### Instalando
 
 Despues de tener los 2 directorios clonados debemos ejecutar los siguientes comandos.
 
@@ -53,6 +53,6 @@ node index.js o npm start
 ```
 
 
-## Authors
+## Autor
 * **Martin Diaz** 
 
